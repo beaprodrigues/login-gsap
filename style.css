@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: #000;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.left,
+.right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.left video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.left::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  mix-blend-mode: darken;
+}
+
+.left {
+  color: #fff;
+}
+
+.left .perfis {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  margin-top: 20px;
+}
+
+.left .perfil {
+  height: 60px;
+  width: 60px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.left .perfil img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.left .perfil:nth-child(2) {
+  margin-left: -30px;
+}
+
+.left .perfil:nth-child(3) {
+  margin-left: -30px;
+}
+
+.left .perfil:nth-child(4) {
+  margin-left: -40px;
+}
+
+
+.left p {
+  font-size: 14px;
+  text-shadow: 10px 10px 30px #000;
+  opacity: 0.8;
+  margin-left: 10px;
+}
+
+.left .header {
+  z-index: 10;
+  position: relative;
+  z-index: 100;
+  text-align: right;
+}
+
+.left .header h2 {
+  font-size: 30px;
+  text-shadow: 10px 10px 30px #000;
+}
+
+
+.right {
+  z-index: 10;
+  background: #fff;
+}
+
+.intro {
+  margin-bottom: 30px;
+  line-height: 1.8;
+  width: 60%;
+}
+
+.intro h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.intro p {
+  font-size: 14px;
+  color: rgba(47, 47, 47, 0.8);
+  font-weight: 500;
+}
+
+.intro span {
+  font-size: 30px;
+}
+
+form {
+  width: 60%;
+}
+
+.formulario {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  margin-bottom: 18px;
+  position: relative;
+}
+
+.formulario input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.formulario label {
+  display: flex;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 5px;
+}
+
+.formulario label a {
+  color: inherit;
+  text-decoration: none;
+  margin-left: auto;
+}
+
+.formulario.box {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.formulario.box input {
+  height: 20px;
+  width: 20px;
+  accent-color: #042e77;
+}
+
+.formulario.box label {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.formulario input:focus {
+  border: 1px solid #042e77;
+}
+
+.formulario input:focus~.icon {
+  color: #042e77;
+}
+
+.entrar {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 16px;
+  font-weight: 600;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #02173b00;
+  background: #042e77;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.form-fallback {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-fallback p {
+  font-size: 14px;
+  color: rgba(47, 47, 47, 0.8);
+  font-weight: 500;
+}
+
+.form-fallback a {
+  text-decoration: none;
+  color: #042e77;
+  margin-left: 8px;
+}
+
+.divisao {
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.2);
+  margin: 30px 0;
+  position: relative;
+}
+
+.divisao::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -51%);
+  background: #ffffff;
+  padding: 10px 20px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.form-fallback .opcoes {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-fallback .opcoes a {
+  height: 40px;
+  width: 40px;
+  display: grid;
+  place-content: center;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+}
+
+a.google {
+  background: #fb3f1c;
+}
+
+a.facebook {
+  background: #3b5999;
+}
+
+a.twitter {
+  background: #09acf4;
+}
+
+a.mail {
+  background: #db3235;
+}
