@@ -1,6 +1,9 @@
 Tela de Login Animada com GSAP
 Este projeto consiste em uma página de login moderna e responsiva, utilizando animações avançadas com a biblioteca GSAP (GreenSock Animation Platform). A interface apresenta um design dividido, com um lado focado em elementos visuais (vídeo e perfis) e o outro dedicado ao formulário de autenticação.
 
+![Screen recording 1 (online-video-cutter com)](https://github.com/user-attachments/assets/ab551f49-17e1-4b14-bee3-4b10648c50df)
+
+
 Tecnologias Utilizadas
 HTML5: Estruturação semântica da página.
 
