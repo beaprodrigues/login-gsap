@@ -1,45 +1,45 @@
-Tela de Login Animada com GSAP
-Este projeto consiste em uma página de login moderna e responsiva, utilizando animações avançadas com a biblioteca GSAP (GreenSock Animation Platform). A interface apresenta um design dividido, com um lado focado em elementos visuais (vídeo e perfis) e o outro dedicado ao formulário de autenticação.
+# Login Page - GSAP
 
 ![Screen recording 1 (online-video-cutter com)](https://github.com/user-attachments/assets/ab551f49-17e1-4b14-bee3-4b10648c50df)
 
 
-Tecnologias Utilizadas
-HTML5: Estruturação semântica da página.
+Este projeto é uma página de login web responsiva, que utiliza **HTML**, **CSS** e **JavaScript** utilizando animações avançadas com a biblioteca GSAP (GreenSock Animation Platform). A interface apresenta um design dividido, com um lado focado em elementos visuais (vídeo e perfis) e o outro dedicado ao formulário de autenticação.
 
-CSS3: Estilização com foco em Flexbox e tipografia Poppins.
 
-JavaScript: Lógica de interação.
+## Tecnologias Utilizadas
 
-GSAP (GreenSock): Biblioteca principal para as animações de entrada e efeitos visuais.
+* **HTML5**: Estrutura semântica.
+* **CSS3**: Estilização e efeitos visuais.
+* **JavaScript**: Interação.
+* **[GSAP](https://greensock.com/gsap/)**: Biblioteca de animação de alta performance.
+* **[ScrollTrigger](https://greensock.com/scrolltrigger/)**: Plugin do GSAP para animações baseadas na rolagem.
 
-Remix Icon: Biblioteca de ícones vetoriais para redes sociais e interface.
 
-Funcionalidades e Animações
-O projeto utiliza o GSAP para criar uma experiência de carregamento dinâmica:
+## Funcionalidades
 
-Fundo em Vídeo: O vídeo de fundo inicia com um efeito de escala (zoom out) suave.
+O projeto utiliza o GSAP para criar uma experiência de carregamento dinâmica.
 
-Entrada de Elementos: Títulos e textos surgem com deslocamento vertical e controle de opacidade.
+- Fundo em Vídeo: O vídeo de fundo inicia com um efeito de escala (zoom out) suave.
 
-Efeito Stagger: Os perfis de usuários e campos do formulário aparecem sequencialmente, criando um fluxo visual organizado.
+- Entrada de Elementos: Títulos e textos surgem com deslocamento vertical e controle de opacidade.
 
-Layout Moderno: Divisão em duas colunas (left e right) que se adaptam à tela.
+- Efeito Stagger: Os perfis de usuários e campos do formulário aparecem sequencialmente, criando um fluxo visual organizado.
 
-Estrutura de Arquivos
-index.html: Contém a estrutura do formulário, links para fontes e bibliotecas externas.
+- Layout Moderno: Divisão em duas colunas (left e right) que se adaptam à tela.
 
-style.css: Define toda a identidade visual, incluindo o uso da fonte Poppins e o posicionamento absoluto do vídeo.
 
-script.js: Responsável pelas timelines e configurações das animações do GSAP.
+## Estrutura do Projeto
 
-img/: Pasta contendo as imagens de perfil (1.jpg, 2.jpg, etc.) e o vídeo de fundo.
+```text
 
-Como Executar
-Clone este repositório ou baixe os arquivos.
-
-Certifique-se de que a estrutura de pastas (img/) esteja preservada.
-
-Abra o arquivo index.html em qualquer navegador moderno.
+├── index.html
+├── style.css        
+├── script.js        
+└── video/
+│   └── video.mp4
+│   └── 1.jpg
+│   └── 2.jpg
+│   └── 3.jpg
+│   └── 4.jpg
 
 As animações iniciarão automaticamente assim que a página for carregada.
